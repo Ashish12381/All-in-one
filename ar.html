@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <script>
+        var number=parseInt(prompt("Enter the Size of Array"));
+        var i;
+        var array=[];
+        var evenCount=0;
+        var oddCount=0;
+        for(i=0;i<number;i++)
+        {
+            array[i]=parseInt(prompt('Enter Element ' + (i+1)));
+
+        }
+        console.log("Array Elements are:"+array);
+
+        console.log("Even Elements")
+for(i=0;i<array.length;i++)
+{
+    if(array[i]%2==0)
+    {
+        console.log(array[i]);
+        evenCount=evenCount+1;
+     
+    }  
+}
+console.log("Even Count:"+evenCount);
+
+
+console.log("Odd Elements:");
+for(i=0;i<array.length;i++)
+{
+    if(array[i]%2==1)
+    {
+        console.log(array[i]);
+        oddCount=oddCount+1;
+    }
+}
+console.log("odd count:"+oddCount);
+    </script>
+   
+</body>
